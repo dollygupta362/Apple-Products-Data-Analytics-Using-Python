@@ -1,21 +1,22 @@
 <h1 align="center">📱 Apple Products Data Analytics (Python Project)</h1>
 
 Welcome to the **Apple Products Data Analytics** project!  
-This is a focused **Exploratory Data Analysis (EDA)** project built using **Python**, designed to uncover insights from Apple’s product listings — including pricing trends, reviews, and product ratings.
+This is a focused **Exploratory Data Analysis (EDA)** project built using **Python**, designed to uncover insights from Apple’s product listings — including pricing trends, customer reviews, discounts, and star ratings.
 
-The project uses `pandas`, `seaborn`, and `matplotlib` to identify patterns in product performance and help understand what influences customer engagement and purchasing decisions.
+The project now includes **7 interactive visualizations** using both `Plotly` and `pandas` to analyze Apple product performance and understand customer behavior.
 
 ---
 
 ## 📘 About the Project
 
 This analysis uses a structured dataset containing product listings for Apple iPhones and other Apple products.  
-It includes information such as **product name, price, rating, review count, and category**.
+It includes information such as **product name, price, MRP, rating, RAM, discount, and review volume**.
 
-The main goals of this project were to:
-- Explore pricing patterns and product segmentation
-- Analyze customer engagement through ratings and reviews
-- Derive actionable business insights using Python-based data exploration
+The goals of this project were to:
+- Explore pricing, rating, and discount patterns
+- Analyze customer engagement via reviews and rating counts
+- Visualize relationships between product features and popularity
+- Provide **business-ready insights** using Python and Plotly
 
 ---
 
@@ -23,35 +24,50 @@ The main goals of this project were to:
 
 - 📄 **apple_products.csv**  
   Contains:
-  - Product ID, Product Name
-  - Category, Price, Rating
-  - Number of Reviews
+  - Product ID, Product Name, Category
+  - MRP, Sale Price, Discount %, RAM
+  - Star Rating, Number of Ratings & Reviews
 
 ---
 
-## 📌 What You'll Find in the Analysis
+## 📈 Visualizations Included (7 Plots)
 
-### 🎯 **Key Focus Areas:**
-- 📈 Relationship between price, rating, and review count
-- 📦 Category-wise product distribution and pricing patterns
-- 💬 Customer engagement trends based on review volume
-- 🔍 High-performing and underperforming product segments
+1. **Number of Ratings for Highest Rated iPhones**  
+   → Analyzes how many customers reviewed the best-rated products.
+2. **Top 10 Most Rated Apple Products**  
+   → Identifies the most popular (most-reviewed) Apple devices.
+3. **Sale Price vs Star Rating (colored by RAM)**  
+   → Explores customer satisfaction across different price and performance tiers.
+4. **RAM Variant Distribution**  
+   → Visualizes how Apple segments products by memory configuration.
+5. **Top 10 Most Rated Products (in K)**  
+   → Highlights high-engagement products with clear `k`-formatted labels.
+6. **Histogram of Discount Amounts (₹)**  
+   → Shows how much Apple typically discounts its products.
+7. **Number of Ratings vs Discount Percentage**  
+   → Explores whether higher discounts lead to more customer engagement.
 
 ---
 
 ## 🔍 Sample Insights
 
-- 💸 **High-Priced Products Don't Always Have High Ratings**  
-  There’s no strong correlation between price and rating — some mid-range products outperform expensive ones in user satisfaction.
+- 🌟 **High Star Ratings Don’t Always Mean Popularity**  
+  Some top-rated iPhones have very few total ratings — reflecting niche appeal rather than mass popularity.
 
-- 🌟 **High Review Counts Signal Customer Trust**  
-  Products with more than **5000 reviews** are mostly priced between **₹60,000 – ₹90,000**, indicating a sweet spot for popular iPhones.
+- 👥 **Popular ≠ Best Rated**  
+  The most reviewed products aren’t always the highest rated — showing a clear trade-off between volume and quality.
 
-- 🧺 **Smartphones Dominate Apple Sales Listings**  
-  The majority of products belong to the **smartphone** category, but wearables and accessories are gaining visibility.
+- 💸 **Price ≠ Rating**  
+  No consistent relationship between sale price and average star rating. Mid-range models perform just as well as premium ones.
 
-- 🛍️ **Price Distribution is Heavily Skewed**  
-  Most products are priced below ₹1,00,000, with a few ultra-premium devices exceeding ₹1,50,000 — revealing Apple’s luxury pricing strategy.
+- 🧠 **2GB & 3GB RAM Dominate**  
+  Most Apple products in this dataset come with 2–3GB RAM, hinting at the inclusion of legacy models.
+
+- 📊 **Discounting Strategy is Conservative**  
+  Majority of discounts fall in the ₹5k–₹10k range. Very few products receive aggressive markdowns — showing Apple's premium pricing model.
+
+- 🔄 **Higher Discounts ≠ More Ratings**  
+  Surprisingly, phones with deeper discounts didn’t necessarily receive more reviews or ratings.
 
 ---
 
@@ -61,7 +77,7 @@ The main goals of this project were to:
 |------------------|-----------------------------|
 | Language         | Python                      |
 | Data Analysis    | pandas                      |
-| Visualization    | seaborn, matplotlib         |
+| Visualization    | plotly, seaborn, matplotlib |
 | Notebook         | Jupyter Notebook / VS Code  |
 
 ---
@@ -70,28 +86,27 @@ The main goals of this project were to:
 
 | 📁 / 📄 Name                            | 📌 Description                              |
 |----------------------------------------|---------------------------------------------|
-|📁Visuals                               | Charts plotted in the jupyter notebook     |
+| 📁 `Visuals/`                          | Exported images of the 7 visualizations     |
 | 📄 `apple_products.csv`                | Original dataset used for analysis          |
-| 📄 `Apple Products Data Analytics.ipynb`          | Jupyter notebook with full code and insights|
-| 📄 `README.md`                         | Project documentation                       |
+| 📄 `Apple Products Data Analytics.ipynb` | Jupyter notebook with full code and insights|
+| 📄 `README.md`                         | Project documentation (this file)           |
 
 ---
 
 ## 🧠 Key Learnings
 
-- Practiced structured EDA using Python and pandas
-- Used grouping, sorting, and aggregation to extract insights
-- Visualized complex relationships with seaborn and matplotlib
-- Focused on **insight-first** analysis instead of chart-heavy presentation
-- Understood how pricing and product category influence customer interest
+- Learned to structure an EDA workflow for product analytics
+- Combined business logic with visual exploration
+- Practiced slicing, sorting, filtering, and group-based operations
+- Applied interactive plots for stakeholder-friendly insights
+- Understood the **gap between popularity and satisfaction metrics**
 
 ---
 
-## 🙋‍♂️ About Me
+## 🙋‍♀️ About Me
 
 👤 **Name:** Dolly Gupta  
 🌐 **LinkedIn:** [https://www.linkedin.com/in/dolly-gupta-3b54b8229](https://www.linkedin.com/in/dolly-gupta-3b54b8229)  
 📬 **Email:** dollygupta362@gmail.com
 
 ---
-
